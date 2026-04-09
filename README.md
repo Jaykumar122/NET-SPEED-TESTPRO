@@ -1,6 +1,6 @@
 # ⚡ NET-SPEED-TESTPRO
 
-A modern, feature-rich internet speed test application built with **React Native Expo 54**, **NativeWind v4**, and **TypeScript**. Test your download speed, upload speed, ping, jitter, and packet loss — all with a beautiful dark UI and persistent history.
+A modern, feature-rich internet speed test application built with **React Native Expo 54**, **NativeWind v5**, and **TypeScript**. Test your download speed, upload speed, ping, jitter, and packet loss — all with a beautiful dark UI and persistent history.
 
 ---
 
