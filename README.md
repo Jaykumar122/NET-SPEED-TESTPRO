@@ -6,9 +6,11 @@ A modern, feature-rich internet speed test application built with **React Native
 
 ## 📱 Screenshots
 
-![WhatsApp Image 2026-04-10 at 1 20 28 AM](https://github.com/user-attachments/assets/f4ce9ea7-dcff-4aa5-98fc-ccfed7181f79)
-![WhatsApp Image 2026-04-10 at 1 20 28 AM (1)](https://github.com/user-attachments/assets/03bda125-5e82-49cc-bafd-1c3d0afafe0e)
-![WhatsApp Image 2026-04-10 at 1 20 27 AM](https://github.com/user-attachments/assets/7efd78fe-82cc-40cf-ada3-8359b1fc61a9)
+![WhatsApp Image 2026-04-10 at 1 20 28 AM](https://github.com/user-attachments/assets/f4ce9ea7-dcff-4aa5-98fc-ccfed7181f79) ||![WhatsApp Image 2026-04-10 at 1 20 28 AM (1)](https://github.com/user-attachments/assets/b00a9449-cb11-4bf0-a1e0-1188b2a6ae54) ||![WhatsApp Image 2026-04-10 at 1 20 27 AM](https://github.com/user-attachments/assets/23ed46a7-0ddd-4d22-a679-5dcc98f60a27)
+
+
+
+
 
 ---
 
