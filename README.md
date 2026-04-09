@@ -104,7 +104,7 @@ SpeedTestApp/
 
 ```bash
 # 1. Clone the repository
-git clone 
+git clone https://github.com/Jaykumar122/NET-SPEED-TESTPRO.git
 cd speedtest-pro
 
 # 2. Install dependencies
