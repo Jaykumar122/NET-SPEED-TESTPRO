@@ -1,0 +1,58 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@theme {
+  /* Dark Theme */
+  --color-dark-bg: #060612;
+  --color-dark-card: #0e0e20;
+  --color-dark-elevated: #161628;
+  --color-dark-border: #1e1e38;
+  --color-dark-muted: #2a2a48;
+
+  /* Light Theme */
+  --color-light-bg: #f0f2ff;
+  --color-light-card: #ffffff;
+  --color-light-elevated: #e8eaff;
+  --color-light-border: #d0d4f0;
+  --color-light-muted: #b8bde0;
+
+  /* Accent System (Updated!) */
+  --color-accent-cyan: #00d4ff;
+  --color-accent-purple: #7c3aed;
+  --color-accent-green: #00ff88;
+  --color-accent-orange: #ff6b35;
+
+  /* Brand System (Expanded!) */
+  --color-brand-cyan: #00e5ff;
+  --color-brand-purple: #a855f7;
+  --color-brand-lime: #84cc16;
+  --color-brand-orange: #f97316;
+  --color-brand-green: #22c55e;
+  --color-brand-red: #ef4444;
+  --color-brand-blue: #3b82f6;
+  --color-brand-yellow: #facc15; /* NEW */
+  --color-brand-pink: #ec4899; /* NEW */
+  --color-brand-teal: #14b8a6; /* NEW */
+  --color-brand-indigo: #6366f1; /* NEW */
+
+  /* Text (Ink) */
+  --color-ink-white: #f0f4ff;
+  --color-ink-silver: #7880a8;
+  --color-ink-ghost: #2e3058;
+  /* Light Theme (Redesigned) */
+  --color-light-bg: #f9fafb;
+  --color-light-card: #ffffff;
+  --color-light-elevated: #f3f4f6;
+  --color-light-border: #e5e7eb;
+  --color-light-muted: #d1d5db;
+
+  /* ... Keep Brand/Accent colors ... */
+
+  /* Text (Ink) - Updated for better contrast */
+  --color-ink-white: #111827;
+  --color-ink-silver: #6b7280;
+  --color-ink-ghost: #9ca3af;
+  /* Fonts */
+  --font-sans: "Inter", sans-serif;
+}
