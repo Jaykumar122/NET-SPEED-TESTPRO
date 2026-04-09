@@ -6,10 +6,13 @@ A modern, feature-rich internet speed test application built with **React Native
 
 ## 📱 Screenshots
 
-![WhatsApp Image 2026-04-10 at 1 20 28 AM](https://github.com/user-attachments/assets/f4ce9ea7-dcff-4aa5-98fc-ccfed7181f79) ||![WhatsApp Image 2026-04-10 at 1 20 28 AM (1)](https://github.com/user-attachments/assets/b00a9449-cb11-4bf0-a1e0-1188b2a6ae54) ||![WhatsApp Image 2026-04-10 at 1 20 27 AM](https://github.com/user-attachments/assets/23ed46a7-0ddd-4d22-a679-5dcc98f60a27)
 
+| Speed Test | History | Network Info |
+|------------|---------|--------------|
+| ![SPEEDTEST](https://github.com/user-attachments/assets/f7383934-bbed-4194-91b8-adfb756c7e32)| ![HISTORY](https://github.com/user-attachments/assets/b893ae9e-0bc5-4582-9a9f-39ea3a7a6940)|![NETWORK INFO](https://github.com/user-attachments/assets/d6990d11-c5bb-470d-870d-daf4a14ae47b)
+|
 
-
+---
 
 
 ---
@@ -65,32 +68,26 @@ A modern, feature-rich internet speed test application built with **React Native
 ```
 SpeedTestApp/
 ├── app/
-│   ├── _layout.tsx          # Root layout (fonts, navigation shell)
-│   ├── index.tsx            # Speed Test screen (main tab)
-│   ├── history.tsx          # History + bar graph screen
-│   └── network.tsx          # Network info screen
+│   ├── _layout.tsx              ← Root layout, StatusBar, SafeAreaProvider
+│   └── (tabs)/
+│       ├── _layout.tsx          ← Bottom tab bar (3 tabs)
+│       ├── index.tsx            ← Speed test screen ⚡
+│       ├── history.tsx          ← Test history + chart 📊
+│       └── network.tsx          ← Network diagnostics 🌐
 ├── components/
-│   ├── SpeedGauge.tsx       # Animated circular speed gauge
-│   ├── MetricCard.tsx       # Ping / Jitter / Packet Loss card
-│   ├── BarChart.tsx         # SVG bar chart for history
-│   ├── HistoryCard.tsx      # Single history result row
-│   ├── NetworkCard.tsx      # Network info row item
-│  
-├── hooks/
-│   ├── useSpeedTest.ts      # Core speed test logic & state
-│   └── useNetworkInfo.ts    # Network / device info hook
-├── store/
-│   └── speedStore.ts        # Zustand store (results + history)
-├── utils/
-│   ├── speedTest.ts         # Download/upload/ping test functions
-│   ├── formatters.ts        # Number & unit formatters
-│   └── storage.ts           # AsyncStorage read/write helpers
-├── types/
-│   └── index.ts             # Shared TypeScript interfaces
-├── tailwind.config.js
-├── app.json
-├── babel.config.js
-└── package.json
+│   ├── SpeedGauge.tsx           ← SVG arc gauge with animated needle
+│   ├── PulseRing.tsx            ← Animated pulse rings during test
+│   ├── HistoryCard.tsx          ← Individual result card with badges
+│   ├── SpeedChart.tsx           ← SVG line chart (download + upload)
+│   └── NetworkCard.tsx          ← Network info summary card
+├── services/
+│   ├── speedTest.ts             ← Real HTTP speed measurement engine
+│   └── storage.ts               ← AsyncStorage CRUD for history
+├── types/index.ts               ← All TypeScript interfaces
+├── package.json / app.json
+├── babel.config.js / metro.config.js
+├── tailwind.config.js / global.css
+└── tsconfig.json
 ```
 
 ---
@@ -108,7 +105,7 @@ SpeedTestApp/
 ```bash
 # 1. Clone the repository
 git clone https://github.com/Jaykumar122/NET-SPEED-TESTPRO.git
-cd speedtest-pro
+cd net-speedtest-pro
 
 # 2. Install dependencies
 npm install
@@ -137,31 +134,6 @@ No API keys are required. The speed test uses publicly available endpoints (e.g.
 
 ---
 
-## 📐 TypeScript Types
-
-```ts
-// types/index.ts
-
-export interface SpeedResult {
-  id: string;
-  timestamp: number;
-  download: number;   // Mbps
-  upload: number;     // Mbps
-  ping: number;       // ms
-  jitter: number;     // ms
-  packetLoss: number; // %
-  server?: string;
-}
-
-export interface NetworkInfo {
-  type: "wifi" | "cellular" | "none" | "unknown";
-  isConnected: boolean;
-  ipAddress: string | null;
-  platform: string;
-  osVersion: string;
-  deviceName: string;
-}
-```
 
 ---
 
